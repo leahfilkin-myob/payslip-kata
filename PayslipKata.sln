@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PayslipKata", "PayslipKata\PayslipKata.csproj", "{263C1625-B14E-4DB6-9D16-B0B986277AD3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{263C1625-B14E-4DB6-9D16-B0B986277AD3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{263C1625-B14E-4DB6-9D16-B0B986277AD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{263C1625-B14E-4DB6-9D16-B0B986277AD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{263C1625-B14E-4DB6-9D16-B0B986277AD3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
