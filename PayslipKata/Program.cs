@@ -29,14 +29,24 @@ namespace PayslipKata
             }
 
             int superRate = 51;
+            int superResult = 0;
             while (superRate < 0 || superRate > 50)
             {
                 Console.Write("Please enter your super rate: ");
-                superRate = Convert.ToInt32(Console.ReadLine());
-                if (superRate < 0 || superRate > 50)
+                bool superCheck = Int32.TryParse(Console.ReadLine(), out superResult);
+                if (superCheck)
+                {
+                    superRate = Convert.ToInt32(superResult);
+                    if (superRate < 0 || superRate > 50)
+                    {
+                        Console.WriteLine("Sorry! We only accept numbers between 0 and 50 inclusive as super rates. Please try again.");
+                    }
+                }
+                else
                 {
                     Console.WriteLine("Sorry! We only accept numbers between 0 and 50 inclusive as super rates. Please try again.");
                 }
+
             }
             
             Console.Write("Please enter your payment start date: ");
