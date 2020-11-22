@@ -24,7 +24,7 @@ namespace PayslipKata
                 }
                 else
                 {
-                    Console.WriteLine("Sorry! We only accept numbers over 0 as salaries. Please try again.");
+                    Console.WriteLine("Sorry! We only accept numbers (not characters) over 0 as salaries. Please try again.");
                 }
             }
 
@@ -55,7 +55,7 @@ namespace PayslipKata
             string endDate = Console.ReadLine();
 
             string paymentPeriod = RewritePaymentPeriod(startDate) + " - " + RewritePaymentPeriod(endDate);
-            uint grossIncome = salary / 12;
+            uint grossIncome = salary / 12; //integer division automatically rounds down
             int incomeTax = Convert.ToInt32(Math.Ceiling(CalculateIncomeTax(salary)));
             int netIncome = Convert.ToInt32(grossIncome - incomeTax);
             int super = Convert.ToInt32(Math.Floor(grossIncome * (superRate * 0.01)));
